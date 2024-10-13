@@ -1,0 +1,23 @@
+<%- include('includes/header') %>
+<br><br>
+
+<form action="/post/<%= post.id %>?_method=PATCH" method="post">
+    <div>
+        id: <%= post.id %>
+        <h3>User Name:
+            <%= post.username %>
+        </h3>
+        <p>
+            Content:
+            <textarea name="content"><%= post.content %></textarea>
+        </p>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+
+
+
+</body>
+</html>

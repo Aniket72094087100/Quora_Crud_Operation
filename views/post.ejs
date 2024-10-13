@@ -1,0 +1,24 @@
+
+<%- include('includes/header'); %>
+        <div class="head">
+            <h2>Quora</h2>
+            <a href="http://localhost:8080/postdata">Add post</a>
+        </div>
+        <% for(post of posts) {%>
+        <div class="content">
+            id: <%= post.id %>
+            <h3>User Name:
+                <%= post.username %>
+            </h3>
+            <p>Content:
+                <%= post.content %>
+            </p>
+            <div>
+                <a href="/post/<%= post.id %>/edit">
+                    Edit details
+                </a>
+            </div>
+        </div><br>
+        <%}%>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+h2{
+    color: rgb(114, 8, 8);
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    align-items: center;
+}
+
+.content{
+    padding: 5px;
+    background-color: rgb(245, 168, 124);
+}
